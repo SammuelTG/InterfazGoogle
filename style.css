@@ -1,0 +1,71 @@
+/*Creacion de la propiedad para todos los elemtentos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Creacion color fondo de pantalla*/
+body {
+    background-color: #353535;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+
+    justify-content: end;
+    height:60px;
+    padding: 0 12px;
+
+}
+
+header .options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .options a {
+    font-family: Arial , sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header .options a svg{
+    height: 24px;
+    width: 24px;
+    
+}
+
+header .options a img{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    
+}
+
+
+main {
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+main .container figure {
+    max-height: 92px;
+}
+
+main .container figure img {
+    height: 100%;
+}
