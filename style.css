@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 
 }
 
 /*Creacion color fondo de pantalla*/
 body {
-    background-color: #353535;
+    background-color: #101218;
     height: 100vh;
 }
 
@@ -63,9 +63,45 @@ main .container{
 }
 
 main .container figure {
-    max-height: 92px;
+    max-height: 100px;  
 }
 
 main .container figure img {
     height: 100%;
 }
+
+main .container .searcher {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px;
+}
+
+main .container .searcher input {
+    width: 100%;
+}
+
+main .container .searcher-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main .container .searcher-buttons button {
+    border: none;
+    border-radius: 6px;
+    background-color: #3f4454;
+    padding: 12px;
+    color: #e8eaed;
+ }
+
+ main .container p {
+    font-size: small;
+ }
+
+ .search-logo {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/search-logo.svg);
+ }
