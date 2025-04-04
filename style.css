@@ -1,25 +1,23 @@
-/*Creacion de la propiedad para todos los elemtentos*/
+/*Creacion de la propiedad para todos los elementos*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-
 }
 
 /*Creacion color fondo de pantalla*/
 body {
     background-color: #101218;
     height: 100vh;
+    color: white; /* Se cambió el color del texto para que sea visible en fondo oscuro */
 }
 
 header {
     display: flex;
-
     justify-content: end;
-    height:60px;
+    height: 60px;
     padding: 0 12px;
-
 }
 
 header .options{
@@ -29,7 +27,7 @@ header .options{
 }
 
 header .options a {
-    font-family: Arial , sans-serif;
+    font-family: Arial, sans-serif;
     text-decoration: none;
     color: white;
 }
@@ -37,16 +35,13 @@ header .options a {
 header .options a svg{
     height: 24px;
     width: 24px;
-    
 }
 
 header .options a img{
     border-radius: 50%;
     height: 32px;
     width: 32px;
-    
 }
-
 
 main {
     height: calc(100% - 60px);
@@ -63,7 +58,7 @@ main .container{
 }
 
 main .container figure {
-    max-height: 100px;  
+    max-height: 100px;
 }
 
 main .container figure img {
@@ -76,10 +71,16 @@ main .container .searcher {
     height: 40px;
     width: 450px;
     padding: 8px;
+    background-color: white; /* fondo para visualizar la barra de búsqueda */
+    border-radius: 24px; /*  bordes redondeados para mejorar el diseño */
+    
 }
 
 main .container .searcher input {
     width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
 }
 
 main .container .searcher-buttons {
@@ -93,15 +94,17 @@ main .container .searcher-buttons button {
     background-color: #3f4454;
     padding: 12px;
     color: #e8eaed;
- }
+}
 
- main .container p {
+main .container p {
     font-size: small;
- }
+    color: white; /*  color del texto para que sea visible */
+}
 
- .search-logo {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/search-logo.svg);
- }
+.search-logo {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    background-image: url(assets/search-logo.svg);   
+}
+
